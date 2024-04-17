@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daum Login</title>
+
+    <script>
+        function DaumLogin(){
+            var frm = document.daumlogin;
+            frm.method= "get";
+            frm.action="/java_spring0417/daum/dauminputloginnext.html";
+            frm.submit();
+        }
+    </script>
+
+</head>
+<body>
+    <form name="daumlogin">
+    <table border="1" align="center" width="300" height="300">
+        <tr>
+            <td style="width:30%">아이디</td>
+            <td ><input type="text" name="" id=""></td>
+        </tr>
+        <tr>
+            <td>비밀번호</td>
+            <td><input type="text" name="" id=""></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="width:100%" align="center"><input type="button" name="" id="" value="로그인" onclick="DaumLogin()"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="width:100%" align="center"><input type="button" name="" id="" value="QR코드 로그인" onclick="DaumLogin()"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

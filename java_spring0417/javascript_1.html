@@ -1,0 +1,95 @@
+<!-- javascript
+document: 문서(모든 문서의 부모) 
+window: 창 (모든 창의 부모) -->
+
+<!-- (DOCTYPE)document type: 문서 타입 -->
+<!-- 문서타입의 html 형식 선언 -->
+<!-- 웹으로 출력: html (hyper text markup language)-->
+
+<!--
+    Object 
+    (실생활)
+    지구.대한민국.서울시.송파구.가락동.송파여성인력개발센터.3층.304호.김현호선생님 
+    지구.미국~~
+    지구.스페인~~
+    지구.하와이~~
+       :  큰 곳 -> 작은 곳 = OOP 객체지향프로그래밍 
+    
+    지구 -> Object
+    
+    서울시 송파구 가락동 송파여성인력개발센터
+    
+    송파여성인력개발센터 1층
+    송파여성인력개발센터 2층
+    송파여성인력개발센터 3층
+    송파여성인력개발센터 4층
+    송파여성인력개발센터 5층
+       
+    Object -> 해당하는 지역으로 가는 것 (상속)
+    spring, egov, servlet, jsp (mvc: model, view, controller)
+    -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 단축키 정리해야겠다,,, 
+        1. ctrl+h : 전체 검색, 전체 바꾸기
+        2. alt + <- (이전 창)
+        3. ctrl + shift + r : 파일 검색 -->
+    <!-- head: javascript, css, meta, title 설정 링크 -->
+
+    <!-- 함수: method -->
+    <!-- argument는 무한으로 올 수 있고, 기본으로 올 수 있다.디폴트 () 
+        function 메소드 이름 (argument(인자) , arg2, arg3 ,,,) -->
+    <!-- () 있는 것은 무조건 동사이다 (움직인다) -->
+    <!-- 변수: 하나의 값만 가지는 명사, var name = "김현호" -->
+    <!-- 보통 함수의 첫글자는 대문자로 (특히 자바는) -->
+    
+    <!-- javascript, vbjavascript, es6, typescript,bananascript,jquery, react 등등 -->
+    <script>
+        function Daum(){
+            // var: Object 모든 타입을 다 가질 수 있다 (포함하고 있다)
+            // es6(2019 javascript)
+            
+            // 모든 객체지향 언어에서의 변수: 오른쪽에서 왼쪽으로 값이 이동한다 (저장한다)
+            // form 타입 이름을 변수로 저장
+            var frm = document.daumfrm; 
+            frm.action = "daumnext2.html"; 
+            // url에 parameter 값이 붙어서 넘어간다 255자를 넘으면 잘린다 
+            // frm.method = "get";
+            // 내부적으로 parameter 값이 넘어간다.  (url 값이 안보인다) 
+
+            frm.method = "post"; 
+            // 405 error -> 지원 안해준다 
+            // liverserver는 get만 지원하고 post는 지원 안한다 -> tomcat 써서 할거임 (server)
+
+            // 모든 parameter 이름을 다음 페이지로 넘긴다. 
+            frm.submit();
+
+        }
+    </script>
+</head>
+
+<body>
+
+
+
+    <!-- 한번에 이해하자 -->
+    <!-- form: form body 안에 있어야 한다 -->
+    <!-- form 안에 파라미터 이름(parameter name)이 있어야, 다음 페이지로 값이 넘어간다. -->
+    <form name="daumfrm">
+        <!-- parameter name: userid -->
+        userid <input type="text" name="userid"><br>
+        <!-- type="password"면 안보인다(별표로 출력) -->
+        passwd <input type="password" name="passwd"><br>
+        <!-- 이벤트 처리 (버튼을 누르면 어떤 행위가 있다)-->
+        <!-- 사용자->왜 안되지? 개발자-> 왜 안될까? -->
+        <input type="button" value="login" onclick="Daum()">
+    </form>
+
+</body>
+
+</html>

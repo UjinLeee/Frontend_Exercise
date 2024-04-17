@@ -1,0 +1,22 @@
+<!---본인 이름 나이 주소 HTML로 만들어서 출력하시오 -->
+<html>
+    <body>
+        <h1>2024-04-15 자기소개 Time</h1>
+
+        <div id="div_name"></div></br>
+        <div id="div_age"></div></br>
+        <div id="div_address"></div></br>
+
+        <script>
+                var name = prompt("이름은");
+                var age = prompt("나이는");
+                var address = prompt("주소는");
+                var  a1 = prompt("각오를 대시오");
+
+                document.getElementById("div_name").innerHTML = "저의 이름은 " +  name;
+                document.getElementById("div_age").innerHTML = "저의 나이는 " + age;
+                document.getElementById("div_address").innerHTML = "저의 주소는 " + address;
+                document.write('각오는,,, ' + a1); 
+        </script>
+    </body>
+</html>
