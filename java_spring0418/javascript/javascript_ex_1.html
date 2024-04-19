@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript_ex_1</title>
+    <script>
+
+        function Click() {
+            var frm = document.exfrm;
+            console.log("name: " + frm.user_name.value);
+            console.log("phone number: " + frm.user_phone.value);
+            console.log("email: " + frm.user_email.value);
+
+            // window.alert(frm.username.value );
+            // window.alert(frm.userphone.value);
+            // window.alert( frm.useremail.value);
+            // 그냥 alert로 해도 된다. window는 생략이 가능하다 
+            window.alert(frm.user_name.value + " "+ frm.user_phone.value+" "+frm.user_email.value );
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <form name="exfrm">
+        이름 <input type="text" name="user_name" id=""><br>
+        핸드폰 <input type="text" name="user_phone" id=""><br>
+        이메일 <input type="text" name="user_email" id=""><br>
+        <input type="button" value="확인" onclick="Click()">
+    </form>
+</body>
+
+</html>

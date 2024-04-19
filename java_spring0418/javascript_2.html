@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 2</title>
+
+    <script>
+        function Login(){
+            //객체지향: 큰 곳 -> 작은 곳
+            //모든 파일의 부모: document (현재 페이지로 접근)
+            //form에 접근
+            var frm = document.exfrm;
+            console.log('userid: ' + frm.userid.value);
+            console.log('password: '+ frm.passwd.value);
+            console.log('address: ' + frm.address.value);
+            
+        }
+    </script>
+</head>
+<body>
+    <form name="exfrm" >
+        userid <input type="text" name="userid" id=""><br>
+        passwd <input type="password" name="passwd" id=""> <br>
+        address <input type="text" name="address" id="">
+        <input type="button" value="login" onclick="Login()">
+    </form>
+</body>
+</html>

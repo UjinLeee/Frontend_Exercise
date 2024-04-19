@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript_1</title>
+
+    <!-- javascript, css, meta link, 설정 -->
+    <script>
+        //function: 함수 (method)
+        //모든 문서의 부모: document
+        //모든 창의 부모: window   
+        function Init(){
+            //' ': 홀따옴표(싱글쿼터), " ":쌍따옴표(더블쿼터)
+            // 홀따옴표로 감싼 것은 문자열이다. 
+            window.alert('it에 오신 것을 환영합니다.');
+        }
+
+        // 함수 이름: Init2(), 알림창은 이름, 나이, 주소 출력
+        // 부른다, 호출한다 (call한다) 
+        function Init2(){
+            window.alert('이유진, 25, 서울시');
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <!-- 단축키: ctrl+o : 영역 찾기(모든 이름 보기) -->
+        <input type="button" value="Click" onclick="Init()"><br><br>
+        <input type="button" value="Init2" onclick="Init2()">
+        <!-- 단축키: Init2() 위에 커서 올려놓고, 'F3' 누르면, 해당 function으로 간다
+                바로 전 위치로 가기 위해선, alt + (<-) / alt + (->) 사용한다 
+                혹은, ctrl 하면 링크처럼 바뀌고, 클릭하면 된다 
+                근데 이게 맥에서도 될려나?? -->
+    </form>
+    
+</body>
+</html>

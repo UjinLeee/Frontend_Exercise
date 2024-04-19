@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function CoupangInputlogin() {
+            var frm = document.coupang_login;
+            console.log("아이디: " + frm.user_id.value);
+            console.log("비밀번호: " + frm.passwd.value);
+            console.log("이름: " + frm.name.value);
+            console.log("휴대폰 번호: " + frm.phoneNm.value);
+
+            alert(frm.user_id.value + " " + frm.passwd.value + " " + frm.name.value + " " + frm.phoneNm.value);
+        }
+    </script>
+</head>
+
+<body>
+    <form name="coupang_login">
+        <!-- 
+        아이디(이메일) <input type="text" name="user_id" id=""><br>
+        비밀번호 <input type="password" name="passwd" id=""><br>
+        비밀번호 확인 <input type="password" name="passwd_chk" id=""><br>
+        이름 <input type="text" name="name" id=""><br>
+        휴대폰 번호 <input type="text" name="phoneNm" id="">
+        <input type="button" value="확인" onclick="CoupangInputlogin()"> -->
+
+        <table border="1">
+            <tr>
+                <td>아이디(이메일)</td>
+                <td><input type="text" name="user_id" id=""></td>
+            </tr>
+            <tr>
+                <td>비밀번호</td>
+                <td><input type="password" name="passwd" id=""></td>
+            </tr>
+            <tr>
+                <td>비밀번호 확인</td>
+                <td><input type="password" name="passwd_chk" id=""></td>
+            </tr>
+            <tr>
+                <td>이름</td>
+                <td><input type="text" name="name" id=""></td>
+            </tr>
+            <tr>
+                <td>휴대폰 번호</td>
+                <td><input type="text" name="phoneNm" id=""></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="button" value="확인" onclick="CoupangInputlogin()"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript2</title>
+</head>
+
+<body>
+    <script>
+
+        var choice = 1;
+
+        // switch: 선택
+        // break: switch 문 밖으로 나가는 것을 의미
+        switch (choice) {
+            case 1:
+                console.log('1 선택 ' + choice);
+                break;
+            case 2:
+                console.log('2 선택 ' + choice);
+                break;
+            case 3:
+                console.log('3 선택 ' + choice);
+                break;
+            default:
+                console.log('아무것도 없으유');
+                break;
+        }
+
+
+    </script>
+
+    <script>
+        //for (초기식;조건식;증감식) -> 조건식이 맞으면 {괄호실행}
+        for (var i = 0; i <= 10; i++) {
+            console.log(i);
+        }
+
+        //2~11까지 출력
+        console.log("============");
+        var sum = 0;
+        for (var index = 2; index <= 11; index++) {
+            // console.log(index);
+            sum += index;
+            console.log(sum);
+        }
+        console.log(sum);
+
+        //0~13까지 합을 출력
+        console.log("============");
+        var sum_2 = 0;
+        for (var j = 0; j <= 13; j++) {
+            sum_2 += j; //sum_2 = sum_2 + j;
+            console.log(sum_2);
+        }
+        console.log(sum_2);
+    </script>
+
+    <script>
+        // while(조건){true면 괄호 실행}
+        var init = 0;
+        var sum = 0;
+        while (++init <= 10) {
+            console.log(init);
+            sum = sum + init;
+            // init++;
+        }
+        console.log(sum);
+        console.log("==========");
+        var init_2 = 0;
+        var sum_2 = 0;
+        while (init_2 <= 11) {
+            console.log(init_2);
+            sum_2 = sum_2 + init_2;
+            ++init_2;
+        }
+        console.log(sum_2);
+        console.log("======Do While문=======");
+
+        //do는 한 번만 무조건 실행된다. 조건이 맞으면 실행 
+        //1~10 출력하기
+        var init_3 = 1;
+        do {
+            console.log(init_3);
+        } while (++init_3 <= 10);
+
+        //0~11 출력
+        var init_4 = 0;
+        var sum_4 = 0;
+        do {
+            console.log(init_4);
+            sum_4 += init_4;
+        } while (++init_4 <= 11);
+        console.log(sum_4);
+    </script>
+</body>
+
+</html>
